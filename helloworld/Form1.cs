@@ -6,5 +6,10 @@ namespace helloworld
         {
             InitializeComponent();
         }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            txtShow.Text = "Hello World!";
+        }
     }
 }

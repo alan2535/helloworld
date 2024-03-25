@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnGo = new Button();
+            txtShow = new TextBox();
+            SuspendLayout();
+            // 
+            // btnGo
+            // 
+            btnGo.Location = new Point(473, 231);
+            btnGo.Name = "btnGo";
+            btnGo.Size = new Size(94, 29);
+            btnGo.TabIndex = 0;
+            btnGo.Text = "開始";
+            btnGo.UseVisualStyleBackColor = true;
+            btnGo.Click += btnGo_Click;
+            // 
+            // txtShow
+            // 
+            txtShow.Location = new Point(279, 231);
+            txtShow.Name = "txtShow";
+            txtShow.Size = new Size(125, 27);
+            txtShow.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(9F, 19F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtShow);
+            Controls.Add(btnGo);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnGo;
+        private TextBox txtShow;
     }
 }
